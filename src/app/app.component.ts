@@ -9,34 +9,36 @@ export class AppComponent {
 
   title = 'Olá';
 
-  cliente = [
+  clientes = [
     {
       nome: 'Alexandre',
-      sexo: 'MAsculino',
-      idade: 20
+      sexo: 'Masculino',
+      idade: 20,
+      salario: '10000'
     },
     {
       nome: 'Roberto',
       sexo: 'Masculino',
-      idade: 33
+      idade: 33,
+      salario: '11000'
     },
     {
       nome: 'Maura',
       sexo: 'Feminino',
-      idade: 23
+      idade: 23,
+      salario: '12000'
     },
     {
       nome: 'Claudia',
       sexo: 'Feminino',
-      idade: 22
+      idade: 22,
+      salario: '13000'
     },
   ]
 
   constructor() {
   }
 
-  // Diretivas estruturais
-
-  // *ngFor
+  // Pipes
 
 }
