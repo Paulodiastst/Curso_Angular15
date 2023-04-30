@@ -9,11 +9,34 @@ export class AppComponent {
 
   title = 'Olá';
 
+  cliente = [
+    {
+      nome: 'Alexandre',
+      sexo: 'MAsculino',
+      idade: 20
+    },
+    {
+      nome: 'Roberto',
+      sexo: 'Masculino',
+      idade: 33
+    },
+    {
+      nome: 'Maura',
+      sexo: 'Feminino',
+      idade: 23
+    },
+    {
+      nome: 'Claudia',
+      sexo: 'Feminino',
+      idade: 22
+    },
+  ]
+
   constructor() {
   }
 
-  // ngIf usando complementos else, usamos para exiber ou ocultar elementos tomada de decisão logica.
+  // Diretivas estruturais
 
-  // ngSwitch
+  // *ngFor
 
 }
