@@ -12,25 +12,25 @@ export class AppComponent {
   clientes = [
     {
       nome: 'Alexandre',
-      sexo: 'Masculino',
+      sexo: 'm',
       idade: 20,
       salario: '10000'
     },
     {
       nome: 'Roberto',
-      sexo: 'Masculino',
+      sexo: 'm',
       idade: 33,
       salario: '11000'
     },
     {
       nome: 'Maura',
-      sexo: 'Feminino',
+      sexo: 'f',
       idade: 23,
       salario: '12000'
     },
     {
       nome: 'Claudia',
-      sexo: 'Feminino',
+      sexo: 'f',
       idade: 22,
       salario: '13000'
     },
