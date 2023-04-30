@@ -1,7 +1,10 @@
-<h1>Bem vindo ao treinamento de Angular!{{title}}</h1>
-<button (click)="mudarTexto()">Mudar texto</button>
+<h1>{{title}}</h1>
 
-<router-outlet></router-outlet>
+<input [(ngModel)]="title">
 
-//<---- 4 tipo de data Binding ---->
-// Interpretação {{title}}
+<img [src]="imgUrl">
+
+<button (click)="chamarFuncao()">Chamar evento</button>
+
+
+  <router-outlet></router-outlet>

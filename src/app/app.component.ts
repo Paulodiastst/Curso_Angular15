@@ -1,58 +1,31 @@
-import {
-  AfterContentChecked,
-  AfterContentInit,
-  AfterViewChecked,
-  AfterViewInit,
-  Component,
-  DoCheck,
-  OnChanges,
-  OnDestroy,
-  OnInit,
-  SimpleChanges
-} from '@angular/core';
-import {createIndexSignature} from "@angular/compiler-cli/src/ngtsc/ts_compatibility";
+import {Component} from "@angular/core";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit, OnChanges, DoCheck, OnDestroy, AfterContentInit, AfterViewInit, AfterContentChecked, AfterViewChecked {
-  title = 'projeto1';
+export class AppComponent {
 
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log('Component OnChanges');
+  title = 'Angular';
+
+  imgUrl = "https://kinsta.com/pt/wp-content/uploads/sites/3/2022/07/angular-vs-vue-1024x512.jpg";
+
+  constructor() {
   }
 
-  ngOnInit(): void {
-    console.log('Component OnInit');
+  chamarFuncao(){
+    console.log("Esse é um click")
   }
 
-  ngDoCheck(): void {
-    console.log('Component DoCheck')
-  }
+  //<---- 4 tipo de data Binding ---->
 
-  mudarTexto() {
-    this.title += 'a';
-  }
+  // Interpretação {{title}}
 
-  ngOnDestroy(): void {
-    throw new Error('Method not implemented.');
-  }
+  // Property bind <img [src]="imgUrl">
 
-  ngAfterContentInit(): void {
-    console.log('Component Content Init')
-  }
+  // Eventy binding <button (click)="chamarFuncao()">
 
-  ngAfterViewInit(): void {
-    console.log('Component AfterViewInit')
-  }
+  // Two-way databinding < input [(ngModel)]="title">
 
-  ngAfterContentChecked(): void {
-    console.log('Component Content Checked')
-  }
-
-  ngAfterViewChecked(): void {
-    console.log('View Checked');
-  }
 }
